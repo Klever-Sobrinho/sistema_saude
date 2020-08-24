@@ -1,16 +1,18 @@
 FROM ruby:2.6
+
 # Instala dependencias
-RUN apt-get update && apt-get install -qq -y --no-install-recommends \
-      build-essential nodejs libpq-dev imagemagick libmagickwand-dev
-# Seta o path
-ENV INSTALL_PATH /sistema_saude
-# Cria o diretório
-RUN mkdir -p $INSTALL_PATH
-# Seta o path como o diretório principal
-WORKDIR $INSTALL_PATH
+RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+
+# Cria e seta o diretório principal
+RUN mkdir /sistema_saude
+WORKDIR /sistema_saude
+
 # Copia o Gemfile para dentro do container
-COPY Gemfile ./
-# Seta o path para as Gems
-ENV BUNDLE_PATH /box
+COPY Gemfile /sistema_saude/Gemfile
+COPY Gemfile.lock /sistema_saude/Gemfile.lock
+
+# Instala as Gems
+RUN bundle install
+
 # Copia o código para dentro do container
-COPY . .
+COPY . /sistema_saude
