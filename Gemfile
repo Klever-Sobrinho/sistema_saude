@@ -21,6 +21,9 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# An easy-to-use interface for managing data
+gem 'rails_admin'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -42,6 +45,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
   # Acceptance test framework and generators dependency
   gem 'capybara'
+  # Provides Rspec one-liners to test common Rails functionality
+  gem 'shoulda-matchers'
 end
 
 group :development do
