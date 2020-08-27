@@ -104,8 +104,8 @@ pt-BR:
           one: Consulta
           other: Consultas
         doctor:
-          one: Doutor
-          other: Doutores
+          one: Médico
+          other: Médicos
         patient:
           one: Paciente
           other: Pacientes
@@ -119,7 +119,7 @@ pt-BR:
           name: Nome
           crm: CRM
           crm_uf: CRM_UF
-          appointments: Consulta
+          appointments: Consultas
         patient:
           name: Nome
           birth_date: Data de nascimento
@@ -353,7 +353,7 @@ pt-BR:
         save_and_edit: "Salvar e editar"
         all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
         are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
-        confirmation: "Sim, tenho a certeza"
+        confirmation: "Sim, tenho certeza"
         delete_confirmation: "Confirmar apagar"
         bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
       export:

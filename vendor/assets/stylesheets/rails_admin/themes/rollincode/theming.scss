@@ -100,7 +100,7 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 
 .btn {
   border-radius: 2px;
-  color: #fff !important;
+  color: rgb(31, 29, 29) !important;
 }
 
 .btn-default {
@@ -108,8 +108,8 @@ body.rails_admin .sidebar-nav > .nav-stacked > li > a {
 }
 
 .btn-info {
-  background: $primary;
-  border-color: darken($primary, 10%);
+  background: #c3c9c3;
+  border-color: darken(#c3c9c3, 10%);
 
   &:active,
   &:focus,

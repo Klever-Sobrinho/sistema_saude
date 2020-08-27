@@ -27,14 +27,39 @@ RailsAdmin.config do |config|
 
   config.model Appointment do
     navigation_icon 'fa fa-calendar'
+
+    field  :starts_at
+    field  :ends_at
+    field  :patient
+    field  :doctor
   end
 
   config.model Doctor do
     navigation_icon 'fa fa-user-md'
+
+    field  :name
+    field  :crm
+    field  :crm_uf
+    field  :appointments
   end
 
   config.model Patient do
     navigation_icon 'fa fa-medkit'
+
+    field  :name
+    field  :birth_date
+    field  :cpf
+    field  :appointments
+
+    edit do
+      field :cpf do
+        html_attributes do 
+          {
+            'data-inputmask' => "'mask': '000.000.000-63'"
+          }
+        end
+      end
+    end
   end
 
   config.actions do
