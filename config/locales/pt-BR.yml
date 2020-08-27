@@ -278,7 +278,7 @@ pt-BR:
         model_not_found: "Modelo '%{model}' não encontrado "
         object_not_found: "%{model} com identificador '%{id}' não encontrado"
       table_headers:
-        model_name: "Nome do modelo"
+        model_name: "Páginas"
         last_used: "Última vez usado"
         last_created: "Última vez criado"
         records: "Registros"
@@ -289,7 +289,7 @@ pt-BR:
         message: "Mensagem"
       actions:
         dashboard:
-          title: "Administração do Site"
+          title: "Administração do Sistema"
           menu: "Dashboard"
           breadcrumb: "Dashboard"
         index:
