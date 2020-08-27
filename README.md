@@ -16,7 +16,7 @@ Tecnologias utilizadas para criar o projeto
 * Rails version 5.0.1
 * PostgreSQL
  
-## Services Used
+## Serviços Usados
  
 * Github
 * Docker + Docker-Compose
