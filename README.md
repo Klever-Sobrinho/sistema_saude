@@ -30,3 +30,4 @@ Things you may want to cover:
 * docker-compose run app rake db:seed (optional unless you want start with pre-data registered)
 * docker-compose run app bin/rspec (for test all cases)
 * docker-compose run app bin/rspec spec/<path><file> (for specific test file/folder)
+* docker-compose run app rake assets:precompile

@@ -1,5 +1,7 @@
 RailsAdmin.config do |config|
 
+  config.main_app_name = ["Sistema Médico de Saúde", ""]
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -22,6 +24,18 @@ RailsAdmin.config do |config|
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
+
+  config.model Appointment do
+    navigation_icon 'fa fa-calendar'
+  end
+
+  config.model Doctor do
+    navigation_icon 'fa fa-user-md'
+  end
+
+  config.model Patient do
+    navigation_icon 'fa fa-medkit'
+  end
 
   config.actions do
     dashboard                     # mandatory
